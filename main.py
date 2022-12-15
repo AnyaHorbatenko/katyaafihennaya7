@@ -30,14 +30,6 @@ def task1(filenamee,countryy,yearr):
                 linee = file.readline()
         # is_first_line = False
 
-def output_one():
-    with open(newfile, "w") as file:
-        for line in list_for_strochka:
-            file.write(line)
-
-
-
-
 parser = argparse. ArgumentParser(description="")
 parser.add_argument("filename")
 parser.add_argument("--medals", action="store_true", required=False)
@@ -51,6 +43,7 @@ countryy = args.country
 yearr = args.year
 filenamee = args.filename
 newfile = args.output
+
 
 print(countryy, yearr)
 print(f"{args.filename=}")
