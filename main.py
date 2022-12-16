@@ -2,7 +2,6 @@ import argparse
 
 list_for_strochka = []
 def task1(filenamee,countryy,yearr):
-    head = None
     people_count = 0
     # is_first_line = True
     with open(filenamee, "r") as file:
@@ -50,6 +49,7 @@ print(f"{args.filename=}")
 print(args)
 if medals == True:
     task1(filenamee, countryy, yearr)
+
 
 
 
